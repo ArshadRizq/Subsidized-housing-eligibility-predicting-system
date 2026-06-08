@@ -155,17 +155,6 @@ python dl_model/train_all.py
 
 # 4. Jalankan aplikasi
 streamlit run app.py
-```
-
-### Deploy ke Streamlit Cloud
-
-1. Push repositori ke GitHub
-2. Buka [share.streamlit.io](https://share.streamlit.io)
-3. Pilih repositori → branch `main` → file `fuzzy_eligibility_app/app.py`
-4. Klik **Deploy**
-
-Streamlit Cloud akan otomatis menjalankan `setup.sh` (yang melatih model ML) sebelum aplikasi berjalan.
-
 ---
 
 ## Teknologi yang Digunakan
