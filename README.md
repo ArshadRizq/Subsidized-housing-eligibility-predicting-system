@@ -145,7 +145,7 @@ fuzzy_eligibility_app/
 ```bash
 # 1. Clone repositori
 git clone <repository-url>
-cd fuzzy_eligibility_app
+cd repo_folder
 
 # 2. Install dependensi
 pip install -r requirements.txt
@@ -220,8 +220,6 @@ streamlit run app.py
 | Muhammad Arshad Rizqullah | 103012400228 |
 | Zona Putra Pribadi | 103012430010 |
 
-
-> ⚠️ **Sesuaikan nama, NIM, dan kontribusi anggota kelompok.**
 
 ---
 
