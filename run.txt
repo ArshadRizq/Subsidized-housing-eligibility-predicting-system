@@ -1,0 +1,44 @@
+=== Cara Menjalankan Aplikasi Web Fuzzy Eligibility ===
+
+A. PERTAMA: Install dependencies (cukup sekali)
+   
+   pip install -r requirements.txt
+
+B. KEDUA: Train model Deep Learning (opsional - sudah ada)
+   
+   Jika ingin melatih ulang model DL:
+   python dl_model/train.py
+
+   Jika tidak, skip. Model sudah disimpan di dl_model/model.joblib
+
+C. KETIGA: Jalankan aplikasi
+
+   streamlit run app.py
+
+   Lalu buka browser di http://localhost:8501
+
+
+=== Catatan untuk Python 3.14 ===
+
+Jika muncul error:
+  TypeError: Metaclasses with custom tp_new are not supported
+
+Jalankan dengan:
+  PYTHONPATH=/usr/lib64/python3.14/site-packages streamlit run app.py
+
+
+=== 5 Tab Aplikasi ===
+
+1. Predictor       → Input 5 variabel, lihat skor Mamdani + Sugeno + DL
+2. Membership Functions → Plot fungsi keanggotaan
+3. Defuzzification → Visualisasi centroid / weighted average
+4. Comparison      → Perbandingan distribusi skor antar metode
+5. Batch Evaluation → Evaluasi 10.000 baris + confusion matrix
+
+
+=== Hasil Evaluasi (10.000 baris) ===
+
+Metrik           Mamdani     Sugeno       DL
+Akurasi          0.7490      0.7490      0.9187
+MAE             13.1484     13.0097      5.3375
+RMSE            16.8397     16.6296      6.3591
